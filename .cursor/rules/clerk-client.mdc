@@ -1,0 +1,23 @@
+---
+description: clerk-client : ClerkClient로 유저 정보 조회 시 정해진 패턴을 따릅니다.
+globs: 
+alwaysApply: false
+---
+
+## ClerkClient: 유저 정보 조회 규칙
+- **ClerkClient를 사용하여 유저 정보를 조회할 때는 다음 규칙을 따르세요:**
+
+1. **기본 사용법**
+```typescript
+import { clerkClient } from '@clerk/nextjs/server'
+
+const client = await clerkClient()
+
+// 단일 유저 조회
+const user = await client.users.getUser(userId)
+
+// 다수 유저 조회 (권장)
+const users = await client.users.getUserList({
+    userId: userIds // string[] 타입
+})
+```

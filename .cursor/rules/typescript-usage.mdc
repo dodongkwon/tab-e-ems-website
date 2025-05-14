@@ -1,0 +1,8 @@
+---
+description: typescript-usage : 프로젝트 전반에 타입 안정성을 위해 TypeScript를 사용합니다.
+globs: 
+alwaysApply: false
+---
+## TypeScript 사용: TS 사용 권장
+- **프로젝트 전반에 TypeScript를 사용하세요.**
+- **타입 안정성을 위해 모든 컴포넌트와 서버 로직에 TypeScript를 적용하세요.**

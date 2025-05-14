@@ -1,0 +1,9 @@
+---
+description: drizzle-orm: API 엔드포인트는 Route Handler를 사용하고, 복잡한 서버 작업은 Route Handler로 구현합니다.
+globs: 
+alwaysApply: false
+---
+## Next.js 개발: Route Handler 우선 사용
+- **모든 API 엔드포인트는 Route Handler를 사용하여 구현하세요.**
+- **데이터베이스 작업, 외부 API 호출, 인증 등 복잡한 서버 작업은 반드시 Route Handler를 사용하세요.**
+- **Server Action은 단순 폼 제출 또는 간단한 데이터 처리에만 사용하세요.**

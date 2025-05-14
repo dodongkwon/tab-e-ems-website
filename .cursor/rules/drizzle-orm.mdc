@@ -1,0 +1,8 @@
+---
+description: package-manager: 데이터베이스 작업은 Drizzle ORM을 사용하여 모델 정의 및 CRUD 작업을 구현합니다.
+globs: 
+alwaysApply: false
+---
+## ORM: Drizzle 사용
+- **데이터베이스 작업을 위해 ORM으로 Drizzle을 사용하세요.**
+- **Drizzle을 사용하여 데이터베이스 모델을 정의하고, CRUD 작업을 구현하세요.**

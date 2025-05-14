@@ -1,0 +1,8 @@
+---
+description: database-rules : 데이터베이스 규칙
+globs: 
+alwaysApply: false
+---
+
+## 데이터베이스 규칙
+- **데이터베이스는 Supabase를 사용합니다.**

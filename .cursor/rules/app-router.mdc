@@ -1,0 +1,7 @@
+---
+description: app-router : 프로젝트 라우팅은 Pages Router 대신 App Router를 사용합니다.
+globs: 
+alwaysApply: false
+---
+## Next.js 라우팅: App Router 사용
+- **프로젝트 내 라우팅은 Pages Router 대신 App Router를 사용하세요.**

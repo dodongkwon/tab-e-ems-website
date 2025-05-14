@@ -1,0 +1,17 @@
+---
+description: interface-prefix : TypeScript 인터페이스 정의 시 이름 앞에 'I' 접두사를 사용합니다.
+globs: 
+alwaysApply: false
+---
+
+## TypeScript 인터페이스 정의 규칙: 'I' 접두사 사용
+- **인터페이스 정의 시 이름 앞에 'I'를 접두사로 추가하세요.**
+- 예시:
+  ```typescript
+  export interface IComment {
+      id: string
+      text: string
+      author: string
+  }
+```
+- 인터페이스 생성은 types/index.ts 파일에 작성하세요.

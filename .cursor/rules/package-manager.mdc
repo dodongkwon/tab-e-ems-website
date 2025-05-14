@@ -1,0 +1,8 @@
+---
+description: route-handlers: 모든 패키지 설치 및 관리는 일관성을 위해 npm만 사용합니다.
+globs: 
+alwaysApply: false
+---
+
+## 패키지 매니저: npm 사용
+- **모든 패키지 설치 및 관리는 npm을 사용하세요.**

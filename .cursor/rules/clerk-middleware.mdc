@@ -1,0 +1,27 @@
+---
+description: clerk-middleware : 인증은 Clerk을 사용하며, middleware.ts에서 clerkMiddleware()를 구현합니다.
+globs: 
+alwaysApply: false
+---
+
+## Clerk 인증: clerkMiddleware() 사용
+- **모든 인증은 Clerk을 사용하세요.**
+- **middleware.ts 파일에서는 clerkMiddleware()를 사용하세요.**
+- **기본 미들웨어 설정:**
+  ```typescript
+  import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+
+  const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
+
+  export default clerkMiddleware(async (auth, request) => {
+    if (!isPublicRoute(request)) {
+      await auth.protect()
+    }
+  })
+
+  export const config = {
+    matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
+  }
+  ```
+  - authMiddleware는 사용하지 않습니다.
+
