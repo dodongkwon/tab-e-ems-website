@@ -4,48 +4,45 @@ import Link from "next/link"
 
 const pricingPlans = [
   {
-    name: "Basic",
-    description: "소규모 기업을 위한 기본 에너지 관리 서비스",
-    price: "299,000",
+    name: "베이직",
+    description: "또는 연 70만원 (17% 할인)",
+    price: "70,000",
     period: "월",
     features: [
       "전력 사용량 실시간 모니터링",
-      "월간 에너지 사용 리포트",
-      "기본 전력 요금 분석",
-      "이메일 기술 지원",
-      "웹 대시보드 접근",
+      "대시보드",
+      "피크 알림 기능",
+      "사용 히스토리",
+      "탄소배출량 기본 계산",
     ],
     cta: "지금 시작하기",
     popular: false
   },
   {
-    name: "Professional",
-    description: "중견 기업을 위한 고급 에너지 관리 솔루션",
-    price: "699,000",
+    name: "프로",
+    description: " 또는 연 150만원 (17% 할인)",
+    price: "150,000",
     period: "월",
     features: [
-      "Basic 플랜의 모든 기능",
-      "시간대별 사용량 상세 분석",
-      "에너지 효율화 제안",
-      "최대수요 관리 알림",
-      "전화 및 이메일 기술 지원",
-      "API 연동 지원"
+      "베이직 플랜의 모든 기능",
+      "고급 데이터 분석",
+      "선택 기간 상세 리포트",
+      "ESG 기본 보고서",
+      "SLLM 기본 보고서",
+      "전화 및 이메일 기술 지원"
     ],
     cta: "무료 체험 신청",
     popular: true
   },
   {
-    name: "Enterprise",
-    description: "대기업을 위한 맞춤형 에너지 관리 시스템",
-    price: "문의",
-    period: "",
+    name: "프리미엄",
+    description: "또는 연 250만원 (17% 할인)",
+    price: "250,000",
+    period: "월",
     features: [
-      "Professional 플랜의 모든 기능",
-      "복수 사업장 통합 관리",
-      "맞춤형 에너지 최적화 컨설팅",
-      "전담 기술 지원 매니저",
-      "현장 교육 및 설치 지원",
-      "시스템 맞춤 개발"
+      "프로 플랜의 모든 기능",
+      "맞춤형 ESG 보고서",
+      "AI채팅 지원 기능",
     ],
     cta: "문의하기",
     popular: false

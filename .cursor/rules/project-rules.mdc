@@ -1,5 +1,5 @@
 ---
-description: project-rules : 프로젝트의 표준과 모범 사례를 정의합니다. NPM을 통한 패키지 관리, Route Handler 우선 사용, Drizzle ORM, App Router, ShadCN 컴포넌트, TypeScript 타입 안전성, 일관된 폴더 구조, 표준화된 Git 커밋 규칙 및 Clerk 인증 방식을 따릅니다.
+description: 
 globs: 
 alwaysApply: false
 ---

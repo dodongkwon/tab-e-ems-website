@@ -1,21 +1,38 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export function DashboardPreview() {
+  const [activeTab, setActiveTab] = useState("실시간 모니터링")
+  
+  // 자동 탭 전환 효과
+  useEffect(() => {
+    const tabs = ["실시간 모니터링", "피크 관리", "리포트"]
+    let currentIndex = 0
+    
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % tabs.length
+      setActiveTab(tabs[currentIndex])
+    }, 5000)
+    
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <div className="p-1">
-      <Tabs defaultValue="실시간 모니터링" className="w-full">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex gap-1">
-            <div className="h-3 w-3 rounded-full bg-red-500"></div>
-            <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-            <div className="h-3 w-3 rounded-full bg-green-500"></div>
-          </div>
-          <div className="text-xs text-muted-foreground">TAB-E 데시보드</div>
+      <div className="bg-muted p-2 flex items-center justify-between rounded-t-md border-b">
+        <div className="flex gap-1">
+          <div className="h-3 w-3 rounded-full bg-red-500"></div>
+          <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+          <div className="h-3 w-3 rounded-full bg-green-500"></div>
         </div>
-        <TabsList className="grid w-full grid-cols-3 h-9">
+        <div className="text-xs text-muted-foreground">TAB-E 대시보드</div>
+      </div>
+
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <TabsList className="grid w-full grid-cols-3 h-10 rounded-none border-b">
           <TabsTrigger value="실시간 모니터링">실시간 모니터링</TabsTrigger>
           <TabsTrigger value="피크 관리">피크 관리</TabsTrigger>
           <TabsTrigger value="리포트">리포트</TabsTrigger>
