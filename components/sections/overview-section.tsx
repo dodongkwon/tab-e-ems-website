@@ -118,8 +118,10 @@ export function OverviewSection() {
             </div>
             <div className="flex-1">
               <blockquote className="text-lg md:text-xl italic mb-4">
-                "우리는 중소 제조기업도 전력 데이터 분석과 탄소 관리의 혜택을 누릴 수 있어야 한다고 생각합니다. TAB-E는 별도의 하드웨어 설치 없이 기존 PC에서 바로 사용할 수 있으며, 평균 10%의 에너지 비용 절감 효과를 제공합니다."
+                "우리는 중소 제조기업도 전력 데이터 분석과 탄소 관리의 혜택을 누릴 수 있어야 한다고 생각합니다.{'\n\n'}
+                TAB-E는 별도의 하드웨어 설치 없이 기존 PC에서 바로 사용할 수 있으며, 평균 10%의 에너지 비용 절감 효과를 제공합니다."
               </blockquote>
+              
               <div>
                 <p className="font-semibold">도현우</p>
                 <p className="text-sm text-muted-foreground">DITAB CEO</p>
