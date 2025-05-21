@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect } from "react"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { HeroSection } from "@/components/sections/hero-section"
@@ -12,6 +15,11 @@ import { FaqSection } from "@/components/sections/faq-section"
 import { ContactSection } from "@/components/sections/contact-section"
 
 export default function Home() {
+  useEffect(() => {
+    // 페이지 로드 시 항상 최상단으로 스크롤
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <Header />
@@ -26,6 +34,6 @@ export default function Home() {
       <FaqSection />
       <ContactSection />
       <Footer />
-      </main>
+    </main>
   )
 }
