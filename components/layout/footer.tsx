@@ -13,6 +13,7 @@ import {
 export function Footer() {
   const [termsOpen, setTermsOpen] = useState(false)
   const [privacyOpen, setPrivacyOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
 
   return (
     <footer className="bg-muted py-12">
@@ -44,7 +45,12 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <Link href="/about" className="hover:text-primary">회사소개</Link>
+                <button 
+                  onClick={() => setAboutOpen(true)} 
+                  className="hover:text-primary cursor-pointer"
+                >
+                  회사소개
+                </button>
               </li>
             </ul>
           </div>
@@ -256,6 +262,31 @@ export function Footer() {
             </p>
 
             <p className="mt-6 text-xs text-muted-foreground">본 개인정보 처리방침은 2025년 5월 15일부터 적용됩니다.</p>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* 회사소개 모달 */}
+      <Dialog open={aboutOpen} onOpenChange={setAboutOpen}>
+        <DialogContent className="max-w-xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold">회사소개</DialogTitle>
+          </DialogHeader>
+          <div className="flex flex-col items-center justify-center py-8">
+            <div className="bg-primary/10 p-6 rounded-full mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v2.5" />
+                <circle cx="16" cy="19" r="2" />
+                <circle cx="17" cy="15" r="2" />
+                <circle cx="15" cy="15" r="2" />
+                <circle cx="14" cy="19" r="2" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">준비중입니다</h3>
+            <p className="text-center text-muted-foreground mb-4">
+              보다 나은 회사 소개 페이지를 준비하고 있습니다.<br />
+              곧 더 자세한 내용으로 찾아뵙겠습니다.
+            </p>
           </div>
         </DialogContent>
       </Dialog>
