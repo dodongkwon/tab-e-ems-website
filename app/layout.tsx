@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "TAB-E 기업 에너지 관리 시스템",
   description: "TAB-E EMS는 기업 고객을 위한 에너지 사용량 분석 및 효율화를 지원하는 SaaS 기반 솔루션입니다.",
+  icons: {
+    icon: '/favicon/favicon.png',
+    apple: '/favicon/favicon.png',
+  },
 };
 
 export default function RootLayout({
