@@ -19,9 +19,9 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">TAB EMS</h3>
+            <h3 className="text-xl font-bold mb-4">DITAB</h3>
             <p className="text-sm text-muted-foreground">
-              기업 고객을 위한 에너지 사용량 분석 및 효율화를 지원하는 SaaS 기반 솔루션
+              에너지 사용량 분석 및 효율화를 지원하는 솔루션
             </p>
           </div>
           <div>
@@ -54,13 +54,13 @@ export function Footer() {
               <p>대표: 도현우</p>
               <p>사업자등록 번호: 478-81-03214</p>
               <p>법인등록번호: 230111-0408376</p>
-              <p>주소: 울산광역시 남구 테크노산업로55번길 79-10, A</p>
+              <p>주소: 울산광역시 남구 테크노산업로55번길 79-10, A동 403호</p>
               <p>이메일: do@di-tab.com</p>
             </address>
           </div>
         </div>
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} TAB-E EMS. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} TAB-E. All rights reserved.</p>
         </div>
       </div>
 

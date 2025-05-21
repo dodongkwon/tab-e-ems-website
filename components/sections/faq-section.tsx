@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button"
 
 const faqs = [
   {
-    question: "TAB-E EMS는 어떻게 설치 하나요?",
+    question: "TAB-E는 어떻게 설치 하나요?",
     answer: "웹사이트에서 회원가입 후 영업담당자가 전화 상담을 진행합니다. 이후 설치 파일 다운로드 권한이 부여되며, 사업장 내 PC 약 10분 정도의 설치 과정을 거쳐 즉시 사용 가능합니다."
   },
   {
     question: "실제로 얼마나 에너지를 절감할 수 있나요?",
-    answer: "TAB-E EMS 도입 기업은 평균적으로 연간 8-10%의 에너지 비용을 절감하고 있습니다."
+    answer: "TAB-E 도입 기업은 평균적으로 연간 8-10%의 에너지 비용을 절감하고 있습니다."
   },
   {
     question: "서비스 도입 시 어떤 하드웨어가 필요한가요?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "서비스 계약 기간은 어떻게 되나요?",
-    answer: "기본적으로 월 단위 구독형 서비스로 제공되며, 연간 계약 시 할인 혜택이 있습니다. Enterprise 요금제의 경우 맞춤형 계약이 가능합니다."
+    answer: "기본적으로 월 단위 구독형 서비스로 제공되며, 연간 계약 시 할인 혜택이 있습니다."
   },
   {
     question: "도입 효과를 어떻게 확인할 수 있나요?",
@@ -37,7 +37,7 @@ export function FaqSection() {
             궁금한 점이 있으신가요?
           </h2>
           <p className="text-lg text-muted-foreground">
-            TAB EMS 도입을 고려하시는 분들이 자주 물어보시는 질문들입니다.
+            TAB-E 도입을 고려하시는 분들이 자주 물어보시는 질문들입니다.
           </p>
         </div>
         

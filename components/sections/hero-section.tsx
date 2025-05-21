@@ -51,7 +51,7 @@ export function HeroSection() {
               </div>
               <div className="flex flex-col items-center bg-background/80 backdrop-blur-sm p-4 rounded-lg border">
                 <div className="text-3xl font-bold text-primary mb-1">
-                  <CountUp end={2} suffix="개월" staticText="1개월 무료" />
+                  <CountUp end={2} suffix="개월" staticText="2개월 무료" />
                 </div>
                 <p className="text-sm text-center">연간 계약 혜택</p>
               </div>

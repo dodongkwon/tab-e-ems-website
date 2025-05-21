@@ -36,7 +36,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="font-medium">주소</div>
-                  <div>울산광역시 남구 테크노산업로55번길 79-10 A</div>
+                  <div>울산광역시 남구 테크노산업로55번길 79-10 A동 403호</div>
                 </div>
               </div>
             </div>

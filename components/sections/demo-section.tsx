@@ -8,9 +8,9 @@ import { useEffect, useState } from "react"
 
 export function DemoSection() {
   const dashboardImages = [
-    "/dashboard.jpg",
-    "/dashboard2.jpg",
-    "/dashboard3.jpg"
+    "/dashboard_001.png",
+    "/dashboard_002.png",
+    "/dashboard_003.png"
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -32,7 +32,7 @@ export function DemoSection() {
             <Badge variant="outline" className="bg-primary/10 hover:bg-primary/20 text-primary border-primary/20">
               데모
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">TAB-E 대시보드 미리보기</h2>
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">TAB-E 미리보기</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
               직관적인 인터페이스로 전문가가 아니어도 쉽게 에너지 사용 현황을 파악할 수 있습니다.
             </p>
@@ -42,10 +42,10 @@ export function DemoSection() {
         <div className="relative mx-auto max-w-5xl">
           <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-xl blur opacity-30"></div>
           <div className="relative bg-background rounded-xl overflow-hidden border shadow-xl">
-            <div className="aspect-video w-full relative">
+            <div className="aspect-video w-full relative" key={`dashboard-slider-${dashboardImages.join('-')}`}>
               {dashboardImages.map((src, index) => (
                 <div 
-                  key={src} 
+                  key={`${src}-${index}`} 
                   className={`absolute inset-0 transition-opacity duration-1000 ${
                     index === currentImageIndex ? "opacity-100" : "opacity-0"
                   }`}
@@ -57,6 +57,7 @@ export function DemoSection() {
                     height={1080}
                     className="object-cover w-full h-full"
                     priority={index === 0}
+                    unoptimized={true}
                   />
                 </div>
               ))}

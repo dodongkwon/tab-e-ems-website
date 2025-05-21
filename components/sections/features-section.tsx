@@ -3,6 +3,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { BarChart2, Bell, Clock, Download, LineChart, PieChart, Shield, Zap } from "lucide-react"
 
+const dashboardImages = [
+  "/dashboard001.png",
+  "/dashboard002.png",
+  "/dashboard003.png"
+]
+
 export function FeaturesSection() {
   return (
     <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-background">

@@ -10,8 +10,8 @@ export default function VideoGuideSection() {
 
   // Featured video data - replace with your actual YouTube video ID
   const featuredVideo = {
-    id: "BHlugvRRqsY", // TAB-E 시스템 소개 영상
-    title: "TAB-E 시스템 소개 및 사용 가이드",
+    id: "pKVQyxjvpHQ", // TAB-E 시스템 소개 영상
+    title: "TAB-E 시스템 필수 가이드",
     description:
       "TAB-E 에너지 관리 시스템의 주요 기능과 효과적인 활용 방법을 알아보세요. 이 영상은 시스템 설치부터 데이터 분석, 에너지 절감 방법까지 TAB-E의 모든 것을 담고 있습니다.",
     category: "사용 가이드",
@@ -25,9 +25,9 @@ export default function VideoGuideSection() {
             <Badge variant="outline" className="bg-primary/10 hover:bg-primary/20 text-primary border-primary/20">
               비디오 가이드
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">TAB-E 사용 가이드 영상</h2>
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">TAB-E 필수 가이드 영상</h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-              TAB-E 시스템의 효과적인 사용법을 영상으로 쉽게 배워보세요.
+              TAB-E 시스템의 필수 가이드 영상으로 쉽게 배워보세요.
             </p>
           </div>
         </div>
